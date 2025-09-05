@@ -1,5 +1,5 @@
 from modedas import converter_cotacao
-
+import interface
 
 def menu():
     print()
@@ -11,7 +11,7 @@ def menu():
     print()
     
 
-opcao = 1 
+opcao = 0
 while opcao != 0:
     menu()
     opcao = int(input("Ecolha uma das opções a cima: "))
@@ -33,3 +33,6 @@ while opcao != 0:
         print(f"{origem} para {destino}: ", converter_cotacao(origem,destino, valor))
         print("***********************")
         print()
+
+
+
