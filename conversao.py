@@ -6,7 +6,6 @@ def menu():
     print("1 - Converter Dólar em Real")
     print("2 - Converter Euro em Real")
     print("3 - Converter Libras em Real")
-    print("4 - Converter em outra opção")
     print("0 - sair")
     print()
     

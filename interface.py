@@ -1,5 +1,7 @@
 from tkinter import *
+
 from modedas import converter_cotacao
+
 
 def execucao():
     texto = converter_cotacao()
