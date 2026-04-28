@@ -1,20 +1,30 @@
-# API de cotação de moedas em tempo real
+=======
+# Conversor de Moedas e Análise Gráfica
 
-# O objetivo desse código e trazer uma cotação de moedas em tempo real e gráficos representando.
+Este projeto é uma ferramenta multifuncional desenvolvida em Python para consultar taxas de câmbio e realizar conversões monetárias em tempo real. A aplicação consome dados de uma API externa e oferece três formas de interação: via consola, interface gráfica (GUI) e visualização de gráficos.
 
-# ---------------------------- Arquivo --------------------------- 
-# MOEDAS
-# Este é o arquivo que realizar a API. Dentro do metodo "get_cootacao" busca site que disponibiliza as informações em JSON, realiza uma verificação se foi possivel realizar a conexão e roda o resto do código.
-# Metodo "converter_cotacao" recebe os parâmetros para buscar a moéda que será cotada, ele ja está setado como padão (origem = 'USD', destino = 'BRL', valor = 1), será cotado o dolar com o real, em comparação a 1 real.
+## 📋 Funcionalidades
 
-# CONVERSÃO
-# Este arquivo contem o backend do menu da interface para o usuário.
+O sistema divide-se em módulos que permitem:
 
-# GRAFICOS
-# Contem a programação para a criação de gráficos de comparação de moedas, apresenta 3 tipos de gráficos (Barra, Pizza, Dispersão).
+* **Conversão de Moedas:** Calcula o valor de conversão entre moedas (Dólar, Euro, Libra) para o Real Brasileiro (BRL), utilizando taxas atualizadas.
+* **Interface Gráfica (GUI):** Uma janela amigável onde o utilizador seleciona a moeda e visualiza a cotação.
+* **Visualização de Dados:** Geração de gráficos (barras, pizza e dispersão) para comparar a valorização de diferentes moedas face ao Real.
+* **Integração com API:** Conexão direta com a `exchangerate-api.com` para obter dados JSON.
 
-# index_grafico 
-# Contem um menu para a seleção de gráfico.
+## 🛠️ Tecnologias Utilizadas
 
-# interface
-# Contem a interface gráfica para o usuário poder realizar a conversão da moeda.
+* **Python 3**
+* **Requests:** Para realizar as requisições HTTP à API de câmbio.
+* **Tkinter:** Para a construção da interface gráfica do utilizador.
+* **Matplotlib:** Para a criação e exibição dos gráficos estatísticos.
+
+## 📂 Estrutura do Projeto
+
+```text
+├── modedas.py        # Módulo central (backend) que consome a API e realiza os cálculos
+├── interface.py      # Aplicação Desktop (GUI) usando Tkinter
+├── conversao.py      # Aplicação de Linha de Comandos (CLI) com menu interativo
+├── graficos.py       # Funções para gerar gráficos (Barra, Pizza, Dispersão) usando Matplotlib
+└── index_grafico.py  # Script principal para executar a visualização dos gráficos
+>>>>>>> 59e27e0bce82297eb2c4a241e547d6c914835a98
